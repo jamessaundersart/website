@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> James Saunders - Artist </title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-231746152-1">
+    </script>
+    <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'UA-231746152-1');
+    </script>
+</head>
+
+<body>
+	<h1>
+		<div id="header">
+			<a href="index.html" id="logo">James Saunders</a>
+			<div id="header-right">
+				<a href="index.html";> Drawings </a>
+				<a href="commissions.html";> Commissions </a>
+				<a href="bio.html";> Bio </a>
+				<a href="contact.html";> Contact </a>
+			</div>
+	    </div> 
+	</h1>
+	
+	<p>
+		<div id="gallery">
+  
+		<img src="images/Drawing018.jpg">
+		<img src="images/Drawing017.jpg">
+		<img src="images/Drawing016.jpg">
+		<img src="images/Drawing015.jpg">
+		<img src="images/Drawing014.jpg">
+		<img src="images/Drawing013.jpg">
+		<img src="images/Drawing012.jpg">
+		<img src="images/Drawing011.jpg">
+		<img src="images/Drawing010.jpg">
+		<img src="images/Drawing009.jpg">
+		<img src="images/Drawing001.jpg">
+		
+	   </div>
+	</p>
+</body>
+</html>
