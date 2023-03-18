@@ -261,28 +261,6 @@ p {
 	}
  }
 
- #darkbox { 
-	 position:absolute;	
-	 top:0; 
-	 left:0; 
-	 background-color:#333; 
-	 overflow: hidden; 
-	 text-align:center; 
-}
-
- .darkboximg { 
-	 padding:5% 5% 2% 5%; 
-}
-
- .fullsizelink { 
-	 margin-bottom:2rem; 
-}
-
- .fullsizelink a { 
-	 color:white; 
-}
-
-
 @keyframes fadein {
 	0%   {opacity: 0.0;}
 	100% {opacity: 1.0;}
