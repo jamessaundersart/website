@@ -14,6 +14,7 @@
 
          gtag('config', 'G-BGDJBBH9MQ');
     </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,26 +28,51 @@
 			</div>
 	    </div> 
 	</h1>
+
 	
 	<p>
 		<div id="gallery">
-
-		<img src="images/Dan.jpg">
-		<img src="images/Sophia.jpg">
-		<img src="images/David.jpg">
-		<img src="images/Nino.jpg">
-		<img src="images/Drawing018.jpg">
-		<img src="images/Drawing017.jpg">
-		<img src="images/Drawing016.jpg">
-		<img src="images/Drawing015.jpg">
-		<img src="images/Drawing014.jpg">
-		<img src="images/Drawing013.jpg">
-		<img src="images/Drawing012.jpg">
-		<img src="images/Drawing010.jpg">
-		<img src="images/Drawing009.jpg">
-		
-		
+			<a href="images/Dan.jpg" class="lightbox_trigger"> <img src="images/Dan.jpg" class="lightbox_trigger"> </a>
+			<a href="images/David.jpg" class="lightbox_trigger"> <img src="images/David.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Nino.jpg" class="lightbox_trigger"> <img src="images/Nino.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Cast Head.jpg" class="lightbox_trigger"> <img src="images/Cast Head.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Face.jpg" class="lightbox_trigger"> <img src="images/Face.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Mother.jpg" class="lightbox_trigger"> <img src="images/Mother.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Old Man.jpg" class="lightbox_trigger"> <img src="images/Old Man.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Rupert.jpg" class="lightbox_trigger"> <img src="images/Rupert.jpg"class="lightbox_trigger"> </a>
+			<a href="images/Sculpture Study.jpg" class="lightbox_trigger"> <img src="images/Sculpture Study.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Smoking Man.jpg" class="lightbox_trigger"> <img src="images/Smoking Man.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Zoe.jpg" class="lightbox_trigger"> <img src="images/Zoe.jpg" class="lightbox_trigger"> </a>
+			<a href="images/Sophia.jpg" class="lightbox_trigger"> <img src="images/Sophia.jpg" class="lightbox_trigger"> </a>
 	   </div>
+
 	</p>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.lightbox_trigger').click(function(e) { 
+				e.preventDefault();
+				var image_href = $(this).attr("href");
+				
+				if ($('#lightbox').length > 0) {
+					$('#content').html('<img src="' + image_href +'"/>');
+					$('#lightbox').show();
+    			}
+
+			else {
+				var lightbox = 
+      			'<div id="lightbox">' +
+        			'<div id="content">' +
+						'<img src="' + image_href +'"/>' +
+        			'</div>' +  
+      			'</div>';
+				$('body').append(lightbox);
+    		}
+		});
+
+				$('body').on('click', '#lightbox', function() { 
+					$('#lightbox').hide();
+  				});
+		});
+	</script>	
 </body>
 </html>
