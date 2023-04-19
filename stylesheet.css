@@ -152,6 +152,7 @@ p {
 	animation-name: fadein;
 	-moz-animation-name: fadein;
 	animation-duration: 5s;
+	cursor:url('cursor.png'),auto;
  }
 
  #gallery img {
@@ -194,7 +195,6 @@ p {
 	margin-right:5vw;
 	height:90vh;
 	max-width:90vw;
-	cursor:url('cursor.png'),auto;
 }
 
 /* RESPONSIVE*/
