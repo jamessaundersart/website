@@ -194,6 +194,7 @@ p {
 	margin-right:5vw;
 	height:90vh;
 	max-width:90vw;
+	cursor:url('cursor.png'),auto;
 }
 
 /* RESPONSIVE*/
