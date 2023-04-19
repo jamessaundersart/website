@@ -159,7 +159,7 @@ p {
 	width: 100% !important;
 	height: auto !important;
 	margin-bottom:15px; /* to match column gap */
-	opacity:80%;
+	opacity:70%;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 	cursor:url('cursor.png'),auto;
