@@ -2,6 +2,10 @@
 	box-sizing: border-box;
   }
 
+#html {
+	cursor:url('cursor.png'),auto;
+}
+
 body {
 	background-color:#110f12;
 	margin: 0;
